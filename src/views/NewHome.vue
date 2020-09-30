@@ -1,7 +1,9 @@
 <template>
     <div class="newhome">
         <el-container>
-            <el-header>Header</el-header>
+            <el-header>
+            <HeadBar></HeadBar>
+            </el-header>
             <el-container>
                 <el-aside width="300px">Aside</el-aside>
                 <el-main >Main</el-main>
@@ -13,8 +15,12 @@
 </template>
 
 <script>
+
+import HeadBar from "@/components/HeadBar";
+
     export default {
-        name: "NewHome"
+        name: "NewHome",
+      components: {HeadBar}
     }
 </script>
 
@@ -23,14 +29,15 @@
         background-color: #B3C0D1;
         color: #333;
         text-align: center;
-        line-height: 60px;
+        line-height: 40px;
+        padding: 10px 320px;
     }
 
     .el-aside {
         background-color: #D3DCE6;
         color: #333;
         text-align: center;
-        line-height: 700px;
+        line-height: 650px;
     }
 
     .el-main {
@@ -41,7 +48,7 @@
     }
 
     body > .el-container {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
 
     .el-container:nth-child(5) .el-aside,

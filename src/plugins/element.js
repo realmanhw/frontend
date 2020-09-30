@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Button,Container,Header,Main,Aside,Footer } from 'element-ui'
+import { Button,Container,Header,Main,Aside,Footer,Col,Row } from 'element-ui'
 
 Vue
     .use(Button)
@@ -8,3 +8,5 @@ Vue
     .use(Main)
     .use(Aside)
     .use(Footer)
+    .use(Col)
+    .use(Row)
