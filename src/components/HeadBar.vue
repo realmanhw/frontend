@@ -1,8 +1,14 @@
 <template>
   <div>
     <el-container>
-      <el-aside width="80%">Aside</el-aside>
+      <el-aside width="16%" style="font-size: 30px">
+        YuePaiJie
+      </el-aside>
+      <el-aside width="64%">
+        首页 | 发现 | 最新 | 论坛 | 商城
+      </el-aside>
       <el-aside class="user" width="20%" >
+        登录
         <el-image src="http://www.yuepaijie.cn/img/touxiang.jpg" fit="fill"></el-image>
         我的名字
       </el-aside>
@@ -35,7 +41,7 @@ export default {
   .el-aside{
     @include
     header-align;
-    padding-left: 20px;
+    padding-left: 30px;
   }
   .user{
     @include
